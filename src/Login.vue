@@ -79,74 +79,8 @@ console.log(userinfo)
   <NavBar :links="links"></NavBar>
   <div class="content">
     <form @submit.prevent="submitForm">
-      <h3 class="title">Form</h3>
-
-      <label for="name">Name:</label>
-      <input type="text" id="name" v-model="userinfo.name" />
-
-      <div class="row-container">
-        <div class="column-container">
-          <label for="Section">Grade & Section</label>
-          <select name="section" id="section" v-model="userinfo.section">
-            <option v-for="section in sections" :value="section" :key="section">
-              {{ section }}
-            </option>
-          </select>
-        </div>
-        <div class="column-container">
-          <p style="margin-left: 10%">Sex</p>
-          <div>
-            <input
-              v-model="userinfo.sex"
-              type="radio"
-              name="sex"
-              id="male"
-              style="margin-left: 10%"
-            />
-            <label for="sex" style="margin-left: 5%">Male</label>
-            <input
-              v-model="userinfo.sex"
-              type="radio"
-              name="sex"
-              id="female"
-              style="margin-left: 8%"
-            />
-            <label for="sex" style="margin-left: 5%">Female</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="row-container">
-        <label for="type" style="display: flex; align-items: center; margin-right: 25%"
-          >Type:</label
-        >
-        <input v-model="userinfo.type" type="radio" name="type" id="regular" style="margin: 5px" />
-        <label for="type" style="display: flex; align-items: center; margin-right: 10%"
-          >Regular</label
-        >
-        <input v-model="userinfo.type" type="radio" name="type" id="home" style="margin: 5px" />
-        <label for="type" style="display: flex; align-items: center; margin-right: 10%">Home</label>
-      </div>
-
-      <label for="destination">Destination</label>
-      <input type="text" name="destination" id="destination" v-model="userinfo.destination" />
-
-      <label for="purpose">Purpose</label>
-      <input type="text" name="purpose" id="purpose" v-model="userinfo.purpose" />
-
-      <div class="row-container">
-        <div class="column-container">
-          <label for="">Time of departure</label>
-          <input type="time" name="timeout" id="time_out" v-model="userinfo.time_out" />
-        </div>
-        <div class="gap"></div>
-        <div class="column-container">
-          <label for="purpose">Time of arrival</label>
-          <input type="time" name="timein" id="est_time_in" v-model="userinfo.est_time_in" />
-        </div>
-      </div>
       <button class="submit">Submit</button>
-      <a href="Login.vue" class="login">Login</a>
+      <a href="#" class="login">Login</a>
       <button class="clear" @click="clear">Clear</button>
     </form>
   </div>

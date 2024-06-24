@@ -9,6 +9,7 @@ defineProps({
 
 <template>
   <nav class="nav">
+    <div style="height: 30px"></div>
     <div v-for="link in links" :key="link.id" class="nav-link active">
       <a href="link.url">{{ link.name }}</a>
     </div>
