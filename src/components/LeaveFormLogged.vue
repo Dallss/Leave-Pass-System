@@ -122,7 +122,7 @@ export default {
     <button class="submit">Submit</button>
     <RouterLink class="login" to="/login">Login</RouterLink>
 
-    <button class="clear" @click="this.clear">Clear</button>
+    <button class="clear" @click="this.clear" type="button">Clear</button>
   </form>
 </template>
 
