@@ -13,6 +13,7 @@ export default {
   },
   methods: {
     clear() {
+      console.log('cls')
       this.userinfo = {
         email: '',
         password: ''
@@ -26,7 +27,7 @@ export default {
       }
     },
     submitForm() {
-      console.log(this.userinfo)
+      console.log('this.userinfo')
       if (!this.isValid()) {
         alert('Please fill all fields')
       } else {
@@ -45,12 +46,12 @@ export default {
   <form @submit.prevent="submitForm">
     <h3 class="title">Form</h3>
 
-    <input type="text" placeholder="Email" v-model="userinfo.email" />
+    <input class="field" type="text" placeholder="Email" v-model="userinfo.email" />
 
-    <input type="text" placeholder="Password" v-model="userinfo.password" />
+    <input class="field" type="password" placeholder="Password" v-model="userinfo.password" />
 
-    <button class="submit">Submit</button>
-    <button class="clear" @click="this.clear">Clear</button>
+    <button class="submit">Submit</button><br /><br />
+    <button class="clear" @click="this.clear" type="button">Clear</button>
   </form>
 </template>
 
@@ -70,7 +71,7 @@ form {
   color: rgba(125, 125, 125, 1);
   font-weight: bold;
 }
-input[type='text'] {
+.field {
   border-radius: 5px;
   border: none;
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);

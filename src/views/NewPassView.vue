@@ -1,9 +1,9 @@
 <script setup>
-import LoginForm from '../components/LoginForm.vue'
+import LeaveFormLogged from '@/components/LeaveFormLogged.vue'
 </script>
 
 <template>
   <main>
-    <LoginForm />
+    <LeaveFormLogged />
   </main>
 </template>

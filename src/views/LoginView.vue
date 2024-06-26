@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import LoginForm from '@/components/LoginForm.vue'
+</script>
 
 <template>
-  <main>login form ni diri</main>
+  <main>
+    <LoginForm />
+  </main>
 </template>
