@@ -2,7 +2,7 @@
 <!-- eslint-disable no-unused-vars -->
 <script>
 export default {
-  name: 'leaveForm',
+  name: 'leaveFormLogged',
   data() {
     return {
       userinfo: {
@@ -77,43 +77,6 @@ export default {
 <template>
   <form @submit.prevent="submitForm">
     <h3 class="title">Form</h3>
-
-    <label for="name">Name:</label>
-    <input type="text" id="name" v-model="userinfo.name" />
-
-    <div class="row-container">
-      <div class="column-container">
-        <label for="Section">Grade & Section</label>
-        <select name="section" id="section" v-model="userinfo.section">
-          <option v-for="section in sections" :value="section" :key="section">
-            {{ section }}
-          </option>
-        </select>
-      </div>
-      <div class="column-container">
-        <p style="margin-left: 10%">Sex</p>
-        <div>
-          <input
-            v-model="userinfo.sex"
-            type="radio"
-            name="sex"
-            value="Male"
-            id="male"
-            style="margin-left: 10%"
-          />
-          <label for="sex" style="margin-left: 5%">Male</label>
-          <input
-            v-model="userinfo.sex"
-            type="radio"
-            name="sex"
-            id="female"
-            value="Female"
-            style="margin-left: 8%"
-          />
-          <label for="sex" style="margin-left: 5%">Female</label>
-        </div>
-      </div>
-    </div>
 
     <div class="row-container">
       <label for="type" style="display: flex; align-items: center; margin-right: 25%">Type:</label>

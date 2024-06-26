@@ -1,7 +1,5 @@
 <script setup></script>
 
 <template>
-  <main>
-    <h1>LALALA</h1>
-  </main>
+  <main>login form ni diri</main>
 </template>
