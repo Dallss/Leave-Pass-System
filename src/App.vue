@@ -17,12 +17,11 @@ console.log(links)
 <template>
   <MyHeader></MyHeader>
   <NavBar :links="links"></NavBar>
-  <RouterLink to="/">
-    Landing
-  </RouterLink>
-  <RouterLink to="/login">
-    Login
-  </RouterLink>
+
+  <nav>
+    <RouterLink to="/"> Landing </RouterLink>
+    <RouterLink to="/login"> Login </RouterLink>
+  </nav>
 
   <div class="content">
     <RouterView />
