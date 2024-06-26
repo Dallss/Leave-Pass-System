@@ -18,10 +18,10 @@ console.log(links)
   <MyHeader></MyHeader>
   <NavBar :links="links"></NavBar>
   <RouterLink to="/">
-    <leaveForm></leaveForm>
+    Landing
   </RouterLink>
   <RouterLink to="/login">
-    <leaveForm></leaveForm>
+    Login
   </RouterLink>
 
   <div class="content">

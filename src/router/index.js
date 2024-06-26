@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { createRouter, createWebHistory } from 'vue-router'
-import landingview from '../views/LandingView.vue'
+import LandingView from '../views/LandingView.vue'
 import LoginView from '../views/LoginView.vue'
 
 const router = createRouter({
@@ -9,7 +9,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'landing',
-      component: landingview
+      component: LandingView
     },
     {
       path: '/login',
